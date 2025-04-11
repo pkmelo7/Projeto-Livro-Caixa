@@ -3,7 +3,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que ocupe toda a tela */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+} 
 
 /* Header */
 .header {
@@ -18,11 +33,13 @@ body {
 }
 
 /* Footer */
-.footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 16px;
-  margin-top: 24px;
+footer {
+  background: #f1f1f1;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 /* Nav */
@@ -44,8 +61,11 @@ body {
 }
 
 /* Main content */
-.main-content {
-  padding: 16px;
+.main-container {
+  flex-grow: 1; /* Faz com que ocupe o espaço disponível */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pages */
@@ -57,4 +77,483 @@ body {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+.login-container{
+  background-color: #007bff;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  border-radius: 70px;
+  flex-direction: column;
+}
+
+.loginButton{
+  border: none;
+  background-color: #00438a;
+  width: 58%;
+  margin-top: 30px;
+  height: 30px;
+  color: white;
+  transition: .1s;
+}
+
+.loginButton:hover{
+  transform: scale(110%);
+}
+
+.login-input{
+  width: 50%;
+  border: lightgray 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-p{
+  transform: translateX(-200%);
+}
+
+.registro-container{
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.registros-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.registros-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  table-layout: auto;
+  word-break: break-word;
+} 
+
+.registros-table th,
+.registros-table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+}
+
+.registros-table th {
+  background-color: #f0f0f0;
+}
+
+.registros-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.registros-table tr:hover {
+  background-color: #f5faff;
+}
+
+.registrosButton-excluir {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.registrosButton-excluir a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.registrosButton-excluir a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.registrosButton-editar {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.registrosButton-editar a{
+  color: black;
+  text-decoration: none;
+}
+
+.registrosButton-editar a:hover {
+  color: rgb(0, 17, 255);
+  text-decoration: underline;
+}
+
+.registros-statics {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.registros-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registros-total p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.registros-total input {
+  width: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1e40ff;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.registrosButton-novoLancamento {
+  background-color: #1e40ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+  height: 45px;
+}
+
+.registrosButton-novoLancamento a {
+  color: white;
+  text-decoration: none;
+}
+
+.registrosButton-novoLancamento:hover {
+  background-color: #1533cc;
+  transform: scale(110%);
+}
+
+.novolancamento-container{
+  width: 800px;
+  height: 400px;
+  background-color: #eeeeee;
+}
+
+.novolancamento-container input{
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+.novolancamento-input{
+  width: 80%;
+  border: lightgray 1px solid;
+  padding: 15px;
+  margin: 10px;
+}
+
+.novolancamento-input-date{
+  width: 25%;
+  border: lightgray 1px solid;
+  padding: 15px;
+  margin: 10px;
+}
+
+.novolancamento-data{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.novolancamento-descricao{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+}
+
+.novolancamento-under{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 94%;
+}
+
+.novolancamento-valor{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.novolancamento-valor .novolancamento-input{
+  width: 65%;
+}
+
+.novolancamento-content{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.novolancamento-checkbox{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.novolancamento-buttons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.novolancamento-buttons button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #1533cc;
+  color: white;
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.novolancamento-buttons button:hover{
+  transform: scale(110%);
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  position: relative;
+  font-size: 16px;
+  user-select: none;
+}
+
+/* Oculta o checkbox nativo */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Caixa visual do checkbox */
+.custom-checkbox .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+}
+
+/* Efeito quando marcado */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+/* Check "✓" com pseudo-elemento */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Mostra o "✓" ao marcar */
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+.novolancamento-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #1e40ff;
+  font-weight: 600;
+  color: white;
+}
+
+.editarregistro-container{
+  width: 800px;
+  height: 400px;
+  background-color: #eeeeee;
+}
+
+.editarregistro-container input{
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+.editarregistro-input{
+  width: 80%;
+  border: lightgray 1px solid;
+  padding: 15px;
+  margin: 10px;
+}
+
+.editarregistro-input-date{
+  width: 25%;
+  border: lightgray 1px solid;
+  padding: 15px;
+  margin: 10px;
+}
+
+.editarregistro-data{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.editarregistro-descricao{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+}
+
+.editarregistro-under{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 94%;
+}
+
+.editarregistro-valor{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.editarregistro-valor .editarregistro-input{
+  width: 65%;
+}
+
+.editarregistro-content{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.editarregistro-checkbox{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.editarregistro-buttons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.editarregistro-buttons button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #1533cc;
+  color: white;
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.editarregistro-buttons button:hover{
+  transform: scale(110%);
+}
+
+.editarregistro-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #1e40ff;
+  font-weight: 600;
+  color: white;
+}
+
+.excluirregistro-container{
+  width: 800px;
+  height: 250px;
+  background-color: #eeeeee;
+}
+
+.excluirregistro-content{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.excluirregistro-buttons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.excluirregistro-buttons button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #1533cc;
+  color: white;
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.excluirregistro-buttons button:hover{
+  transform: scale(110%);
+}
+
+.excluirregistro-buttons .button-sim:hover{
+  transform: scale(110%);
+  background-color: red;
+}
+
+
+.excluirregistro-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #1e40ff;
+  font-weight: 600;
+  color: white;
+}
+
+.excluirregistro-content span{
+  padding: 20px;
 }

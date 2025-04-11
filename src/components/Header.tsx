@@ -3,7 +3,7 @@
 export function Header(){
     return(
         <header className="header">
-            <h1 className="header-title">Meu Projeto React</h1>
+            <h1 className="header-title">Projeto Livro Caixa</h1>
         </header>
     );
 }

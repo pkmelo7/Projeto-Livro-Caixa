@@ -3,7 +3,7 @@
 export function Footer(){
     return(
         <footer className="footer">
-            <p>(c) 2025 meu mesmo</p>
+            <p>© Todos os direitos reservados</p>
         </footer>
     );
 }
