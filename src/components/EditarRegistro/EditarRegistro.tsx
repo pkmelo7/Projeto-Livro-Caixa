@@ -1,5 +1,7 @@
 // pages/EditarRegistro.tsx
 
+import './EditarRegistro.css'
+
 export function EditarRegistro(){
     return (
         <div className="editarregistro-container">

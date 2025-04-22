@@ -2,20 +2,21 @@
 
 import React from 'react';
 import logo from './logo.svg';
-import { Hello } from './components/Hello';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Nav } from './components/Nav';
-import { Home } from './pages/Home';
-import { About } from './pages/About';
 import './App.css';
-import { Login } from './pages/Login';
-import { Registros } from './pages/Registros';
-import { NovoLancamento } from './components/NovoLancamento';
-import { EditarRegistro } from './components/EditarRegistro';
-import { ExcluirRegistro } from './components/ExcluirRegistro';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+import { Nav } from './components/Nav/Nav';
+import { Home } from './pages/Home/Home';
+import { About } from './pages/About/About';
+import { Login } from './pages/Login/Login';
+import { Registros } from './pages/Registros/Registros';
+import { NovoLancamento } from './components/NovoLancamento/NovoLancamento';
+import { EditarRegistro } from './components/EditarRegistro/EditarRegistro';
+import { ExcluirRegistro } from './components/ExcluirRegistro/ExcluirRegistro';
+import { Spinner } from './components/Spinner/Spinner';
+import { Card } from './components/Card/Card';
 
 function App() {
   return (

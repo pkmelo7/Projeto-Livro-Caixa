@@ -1,0 +1,53 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    position: relative;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  /* Oculta o checkbox nativo */
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Caixa visual do checkbox */
+  .custom-checkbox .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Efeito quando marcado */
+  .custom-checkbox input:checked + .checkmark {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  
+  /* Check "✓" com pseudo-elemento */
+  .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Mostra o "✓" ao marcar */
+  .custom-checkbox input:checked + .checkmark::after {
+    display: block;
+  }

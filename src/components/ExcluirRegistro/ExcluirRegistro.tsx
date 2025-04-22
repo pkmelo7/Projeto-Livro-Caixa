@@ -1,5 +1,7 @@
 // pages/ExcluirRegistro.tsx
 
+import './ExcluirRegistro.css';
+
 export function ExcluirRegistro(){
     return (
         <div className="excluirregistro-container">

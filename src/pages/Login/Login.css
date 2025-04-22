@@ -1,0 +1,36 @@
+.login-container{
+    background-color: #007bff;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 70px;
+    flex-direction: column;
+  }
+  
+  .loginButton{
+    border: none;
+    background-color: #00438a;
+    width: 58%;
+    margin-top: 30px;
+    height: 30px;
+    color: white;
+    transition: .1s;
+  }
+  
+  .loginButton:hover{
+    transform: scale(110%);
+  }
+  
+  .login-input{
+    width: 50%;
+    border: lightgray 1px solid;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .login-p{
+    transform: translateX(-200%);
+  }
+  
+  

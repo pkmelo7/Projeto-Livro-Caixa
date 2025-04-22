@@ -1,0 +1,25 @@
+/* Pages */
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+  
+.home p, .home h2{
+    padding-left: 30px;
+}
+
+.home-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 32px;
+  }

@@ -1,0 +1,24 @@
+/* Header */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+  }
+  
+  .fa-book-open{
+    transform: translateX(-188%);
+    scale: 210%;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    transform: translateX(-10%);
+  }

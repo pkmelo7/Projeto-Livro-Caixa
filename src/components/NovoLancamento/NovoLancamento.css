@@ -1,0 +1,104 @@
+.novolancamento-container{
+    width: 800px;
+    height: 400px;
+    background-color: #eeeeee;
+  }
+  
+  .novolancamento-container input{
+    border-radius: 5px;
+    border: 2px solid lightgray;
+  }
+  
+  .novolancamento-input{
+    width: 80%;
+    border: lightgray 1px solid;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .novolancamento-input-date{
+    width: 25%;
+    border: lightgray 1px solid;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .novolancamento-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .novolancamento-descricao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+  }
+  
+  .novolancamento-under{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 94%;
+  }
+  
+  .novolancamento-valor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .novolancamento-valor .novolancamento-input{
+    width: 65%;
+  }
+  
+  .novolancamento-content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .novolancamento-checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+  }
+  
+  .novolancamento-buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  .novolancamento-buttons button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #1533cc;
+    color: white;
+    border-radius: 5px;
+    transition: .1s;
+  }
+  
+  .novolancamento-buttons button:hover{
+    transform: scale(110%);
+  }
+  
+  .novolancamento-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #1e40ff;
+    font-weight: 600;
+    color: white;
+  }
+  
+  

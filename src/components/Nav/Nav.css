@@ -1,0 +1,24 @@
+/* Nav */
+.nav {
+    background-color: #eaeaea;
+    display: flex;
+    gap: 15px;
+    position: fixed;
+    top: 100px;
+    padding-left: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 30px;
+    align-items: center;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }

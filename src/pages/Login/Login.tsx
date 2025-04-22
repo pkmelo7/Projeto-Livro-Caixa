@@ -1,5 +1,7 @@
 // pages/Login.tsx
 
+import './Login.css'
+
 export function Login(){
     return (
         <div className="login-container">

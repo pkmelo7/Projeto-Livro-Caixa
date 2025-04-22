@@ -1,5 +1,8 @@
 // pages/NovoLancamento.tsx
 
+import '../CustomCheckbox.css'
+import './NovoLancamento.css'
+
 export function NovoLancamento(){
     return (
         <div className="novolancamento-container">

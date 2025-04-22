@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './Registros.css'
 
 type Registro = {
     id: number;
@@ -22,7 +23,7 @@ type Registro = {
   ];
 
 export function Registros(){
-    const [totalPagos, setTotalPagos] = useState(0);
+  const [totalPagos, setTotalPagos] = useState(0);
   const [totalRecebidos, setTotalRecebidos] = useState(0);
   const [saldo, setSaldo] = useState(0);
 
